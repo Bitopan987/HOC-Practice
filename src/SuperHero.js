@@ -5,7 +5,7 @@ class SuperHero extends React.Component {
     username: 'Ayush',
   };
   render() {
-    return <h4>{this.props.children}</h4>;
+    return <>{this.props.children(this.state.username)}</>;
   }
 }
 

@@ -11,8 +11,11 @@ function App() {
     <>
       <Followers />
       <Following />
-      <SuperHero> Bitopan </SuperHero>
-      <SuperHero> Tinkal </SuperHero>
+      <SuperHero>
+        {(num) => {
+          console.log(num);
+        }}
+      </SuperHero>
     </>
   );
 }
