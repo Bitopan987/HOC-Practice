@@ -2,6 +2,8 @@ import React from 'react';
 import Spinner from './Spinner';
 import withData from './withData';
 import Card from './Card';
+import A from './A';
+import C from './C';
 
 function Followers(props) {
   if (!props.data) {
@@ -29,6 +31,8 @@ function Followers(props) {
           return <Card {...follower} />;
         })}
       </ul>
+      <A />
+      <C />
     </>
   );
 }

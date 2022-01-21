@@ -2,6 +2,7 @@ import React from 'react';
 import Spinner from './Spinner';
 import withData from './withData';
 import Card from './Card';
+import B from './B';
 
 function Following(props) {
   if (!props.data) {
@@ -29,6 +30,7 @@ function Following(props) {
           return <Card {...follower} />;
         })}
       </ul>
+      <B />
     </>
   );
 }
